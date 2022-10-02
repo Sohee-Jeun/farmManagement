@@ -77,6 +77,7 @@ function createHTMLString(item) {
 }
 function employeeListClick(event, employees) {
   const table = document.getElementById("paymentSheet");
+  table.innerHTML = ``;
   const dataset = event.target.dataset;
   const key = dataset.key;
   const value = dataset.value;
