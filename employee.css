@@ -1,0 +1,225 @@
+/*root*/
+:root {
+  /*color*/
+  --color--white-grey: #f4efe9;
+  --color--black: #222222;
+  --color--dark-dreen: #49583c;
+  --color--yellow: #f4c430;
+  --color--orange: #d5702b;
+
+  /*size*/
+  --size--border-radius: 6px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: var(--color--white-grey);
+  color: var(--color--black);
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: var(--color--black);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+  height: auto;
+}
+.logo {
+  margin-left: 1em;
+  padding-top: 0.5em;
+  font-size: 20px;
+}
+.logo i {
+  color: var(--color--dark-dreen);
+}
+.menuitems {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.menuitems li {
+  padding: 0.3em;
+  width: 100%;
+  text-align: center;
+}
+
+.menuitems li:hover {
+  padding: 0.3em;
+  background-color: var(--color--orange);
+}
+
+.navbar-toggleBtn {
+  position: absolute;
+  display: block;
+  top: 0.5em;
+  right: 1.5em;
+  font-size: 20px;
+  color: var(--color--orange);
+}
+
+.menuitems.active {
+  display: flex;
+}
+
+.conrtolSection {
+  margin: 0 auto;
+  width: 20em;
+}
+.employeeListSection {
+  background-color: white;
+  border-radius: var(--size--border-radius);
+}
+.employeeListSection h2 {
+  padding: 0.5em 0 0 1em;
+  font-size: 1.1em;
+}
+
+.employeeListBtns {
+  display: flex;
+  padding: 1em;
+}
+.employeeBtn {
+  margin-right: 4px;
+  padding: 3px;
+  width: 5em;
+  color: var(--color--white-grey);
+  background-color: var(--color--dark-dreen);
+  border-radius: var(--size--border-radius);
+}
+
+.employeeBtn:hover {
+  cursor: pointer;
+  background-color: var(--color--yellow);
+  color: var(--color--black);
+}
+.employeeInfo {
+  border-radius: var(--size--border-radius);
+}
+.employeeInfo h2 {
+  padding: 0.5em 0 0 1em;
+  font-size: 1.1em;
+}
+.personalInfoContents {
+  padding: 0.5em;
+  background-color: white;
+  border-radius: var(--size--border-radius);
+}
+#personalInfo {
+  table-layout: auto;
+  border-collapse: collapse;
+  vertical-align: text-top;
+  font-size: 0.5em;
+}
+.imgTable {
+  width: fit-content;
+}
+.item__thumbnail {
+  display: block;
+  margin: 0 2em;
+  width: 12em;
+  height: 14.5em;
+}
+.timeAndAttendanceDataField {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  height: 10em;
+  background-color: white;
+  border-radius: var(--size--border-radius);
+  overflow-y: scroll;
+}
+#wt {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+  vertical-align: text-top;
+  text-align: center;
+  font-size: 0.8em;
+  overflow-y: scroll;
+}
+#wt thead {
+  position: sticky;
+  top: 0;
+  font-weight: 700;
+  background-color: white;
+}
+
+.paymentSection {
+  position: relative;
+  padding: 0.5em;
+  top: 0.5em;
+  left: 0;
+  background-color: white;
+  border-radius: var(--size--border-radius);
+}
+.selectPeroid div {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.paymentStatusBtn {
+  display: block;
+  margin: 1em auto;
+  padding: 0.3em 0.5em;
+  border-radius: var(--size--border-radius);
+  background-color: var(--color--dark-dreen);
+  color: white;
+}
+#paymentSheet {
+  margin-bottom: 1em;
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8em;
+  border: 1px solid black;
+  text-align: center;
+}
+#paymentSheet tr,
+#paymentSheet td {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+#paymentSheet thead {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 500px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    background-color: var(--color--dark-dreen);
+  }
+  .navbar-toggleBtn {
+    display: none;
+  }
+  .menuitems {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menuitems a {
+    color: var(--color--white-grey);
+  }
+  .employeeListSection,
+  .employeeInfo,
+  .personalInfoContents,
+  .timeAndAttendanceDataField,
+  .paymentSection {
+    width: auto;
+  }
+}

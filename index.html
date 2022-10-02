@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/5a5a075177.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js" defer></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("pwabuilder-sw.js").then((reg) => {
+          console.log("ServiceWorker register complete", reg);
+        });
+      }
+    </script>
+    <title>벌대농장 직원관리 시스템</title>
+  </head>
+  <body>
+    <section id="section">
+      <p>
+        <i class="fa fa-solid fa-leaf"></i>
+        벌대농장 직원관리 시스템
+      </p>
+
+      <button type="button" class="linkTo calendar">
+        <i class="fa fa-regular fa-calendar"></i>일정관리
+      </button>
+      <button type="button" class="linkTo tm">
+        <i class="fa fa-solid fa-user-clock"></i>근무시간관리
+      </button>
+      <button type="button" class="linkTo employee">
+        <i class="fa fa-solid fa-won-sign"></i>근태/월급조회
+      </button>
+    </section>
+  </body>
+</html>

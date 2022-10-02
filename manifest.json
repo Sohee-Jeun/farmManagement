@@ -1,0 +1,358 @@
+{
+  "background_color": "#f4c430",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "벌대농장 직원 관리 시스템",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "벌대농장",
+  "description":"Developed by Sohee",
+  "start_url": "https://sohee-jeun.github.io/farm-management/",
+  "theme_color": "#49583c",
+  "icons": [
+    {
+      "src": "images/71x71.png",
+      "sizes": "71x71"
+    },
+    {
+      "src": "images/89x89.png",
+      "sizes": "89x89"
+    },
+    {
+      "src": "images/107x107.png",
+      "sizes": "107x107"
+    },
+    {
+      "src": "images/142x142.png",
+      "sizes": "142x142"
+    },
+    {
+      "src": "images/284x284.png",
+      "sizes": "284x284"
+    },
+    {
+      "src": "images/150x150.png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "images/188x188.png",
+      "sizes": "188x188"
+    },
+    {
+      "src": "images/225x225.png",
+      "sizes": "225x225"
+    },
+    {
+      "src": "images/300x300.png",
+      "sizes": "300x300"
+    },
+    {
+      "src": "images/600x600.png",
+      "sizes": "600x600"
+    },
+    {
+      "src": "images/310x150.png",
+      "sizes": "310x150"
+    },
+    {
+      "src": "images/388x188.png",
+      "sizes": "388x188"
+    },
+    {
+      "src": "images/465x225.png",
+      "sizes": "465x225"
+    },
+    {
+      "src": "images/620x300.png",
+      "sizes": "620x300"
+    },
+    {
+      "src": "images/1240x600.png",
+      "sizes": "1240x600"
+    },
+    {
+      "src": "images/310x310.png",
+      "sizes": "310x310"
+    },
+    {
+      "src": "images/388x388.png",
+      "sizes": "388x388"
+    },
+    {
+      "src": "images/465x465.png",
+      "sizes": "465x465"
+    },
+    {
+      "src": "images/620x620.png",
+      "sizes": "620x620"
+    },
+    {
+      "src": "images/1240x1240.png",
+      "sizes": "1240x1240"
+    },
+    {
+      "src": "images/44x44.png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "images/55x55.png",
+      "sizes": "55x55"
+    },
+    {
+      "src": "images/66x66.png",
+      "sizes": "66x66"
+    },
+    {
+      "src": "images/88x88.png",
+      "sizes": "88x88"
+    },
+    {
+      "src": "images/176x176.png",
+      "sizes": "176x176"
+    },
+    {
+      "src": "images/50x50.png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "images/63x63.png",
+      "sizes": "63x63"
+    },
+    {
+      "src": "images/75x75.png",
+      "sizes": "75x75"
+    },
+    {
+      "src": "images/100x100.png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "images/200x200.png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "images/620x300.png",
+      "sizes": "620x300"
+    },
+    {
+      "src": "images/775x375.png",
+      "sizes": "775x375"
+    },
+    {
+      "src": "images/930x450.png",
+      "sizes": "930x450"
+    },
+    {
+      "src": "images/1240x600.png",
+      "sizes": "1240x600"
+    },
+    {
+      "src": "images/2480x1200.png",
+      "sizes": "2480x1200"
+    },
+    {
+      "src": "images/16x16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/20x20.png",
+      "sizes": "20x20"
+    },
+    {
+      "src": "images/24x24.png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "images/30x30.png",
+      "sizes": "30x30"
+    },
+    {
+      "src": "images/32x32.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/36x36.png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "images/40x40.png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "images/44x44.png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "images/48x48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/60x60.png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "images/64x64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/72x72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "images/80x80.png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "images/96x96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/256x256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/16x16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/20x20.png",
+      "sizes": "20x20"
+    },
+    {
+      "src": "images/24x24.png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "images/30x30.png",
+      "sizes": "30x30"
+    },
+    {
+      "src": "images/32x32.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/36x36.png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "images/40x40.png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "images/44x44.png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "images/48x48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/60x60.png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "images/64x64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/72x72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "images/80x80.png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "images/96x96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/256x256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/16x16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/20x20.png",
+      "sizes": "20x20"
+    },
+    {
+      "src": "images/24x24.png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "images/30x30.png",
+      "sizes": "30x30"
+    },
+    {
+      "src": "images/32x32.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/36x36.png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "images/40x40.png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "images/44x44.png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "images/48x48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/60x60.png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "images/64x64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/72x72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "images/80x80.png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "images/96x96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/256x256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/512x512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/192x192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/144x144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/96x96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/72x72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "images/48x48.png",
+      "sizes": "48x48"
+    }
+  ]
+}

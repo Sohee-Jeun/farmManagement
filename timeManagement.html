@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./timeManagement.css" />
+    <script
+      src="https://kit.fontawesome.com/5a5a075177.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./timeManagement.js" defer></script>
+    <title>시간관리</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa fa-solid fa-leaf"></i>
+      </div>
+      <ul class="menuitems">
+        <li>
+          <a href="./calendar.html">일정관리</a>
+        </li>
+        <li>
+          <a href="./timeManagement.html">직원 근태관리</a>
+        </li>
+        <li>
+          <a href="./employee.html">직원 관리</a>
+        </li>
+      </ul>
+      <a href="#" class="navbar-toggleBtn">
+        <i class="fa fa-solid fa-bars"></i>
+      </a>
+    </nav>
+    <div class="controlBar">
+      <h2>직원근태관리</h2>
+      <div class="employeeList">
+        <span>직원을 한 명만 선택해주십시오.</span>
+        <input type="checkbox" name="employeeName" value="980807" />전태원
+        <input type="checkbox" name="employeeName" value="961201" />전소희
+      </div>
+      <div class="details">
+        <span>오늘의 데이터를 입력하세요.</span>
+        <div class="inputDetails">
+          <label for="workDate">날짜</label>
+          <input type="date" id="workDate" />
+
+          <div class="inputTime">
+            <label for="punchedHours">일 한 시간</label>
+            <input type="number" id="punchedHours" min="0" placeholder="시간" />
+            <input
+              type="number"
+              id="punchedMins"
+              min="0"
+              max="60"
+              placeholder="분"
+            />
+          </div>
+          <div class="inputDayOff">
+            <input type="checkbox" id="dayOff" />
+            <label for="dayOff">휴무</label>
+            <input type="text" placeholder="사유" id="dayOffReason" />
+          </div>
+        </div>
+      </div>
+      <div class="confirmSection"></div>
+      <button type="submit" id="save">저장</button>
+    </div>
+  </body>
+</html>

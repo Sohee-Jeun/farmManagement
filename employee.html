@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a5a075177.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./employee.css" />
+    <script type="module" src="./employee.js" defer></script>
+    <title>직원정보 관리/조회</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa fa-solid fa-leaf"></i>
+      </div>
+      <ul class="menuitems">
+        <li>
+          <a href="./calendar.html">일정관리</a>
+        </li>
+        <li>
+          <a href="./timeManagement.html">직원 근태관리</a>
+        </li>
+        <li>
+          <a href="./employee.html">직원 관리</a>
+        </li>
+      </ul>
+      <a href="#" class="navbar-toggleBtn">
+        <i class="fa fa-solid fa-bars"></i>
+      </a>
+    </nav>
+    <div class="controlbar">
+      <section class="employeeListSection">
+        <h2>직원 리스트</h2>
+        <div class="employeeListBtns">
+          <button
+            class="employeeBtn"
+            data-key="employeeNum"
+            data-value="961201"
+          >
+            전소희
+          </button>
+          <button
+            class="employeeBtn"
+            data-key="employeeNum"
+            data-value="980807"
+          >
+            전태원
+          </button>
+        </div>
+      </section>
+      <section class="employeeInfo">
+        <h2>직원 정보</h2>
+        <div class="personalInfoContents">
+          <table id="personalInfo">
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="timeAndAttendanceDataField">
+          <table id="wt">
+            <thead>
+              <tr>
+                <td>날짜</td>
+                <td>일한시간</td>
+                <td>휴무</td>
+              </tr>
+            </thead>
+            <tbody id="punchInDetails"></tbody>
+          </table>
+        </div>
+        <section class="paymentSection">
+          <div class="selectPeroid">
+            <div>
+              <label for="startDate">시작날짜</label>
+              <input type="date" id="startDate" />
+            </div>
+            <div>
+              <label for="endDate">끝날짜</label>
+              <input type="date" id="endDate" />
+            </div>
+
+            <button type="button" class="paymentStatusBtn">급여계산</button>
+          </div>
+          <table id="paymentSheet"></table>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

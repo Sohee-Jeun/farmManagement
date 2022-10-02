@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./calendar.css" />
+    <link rel="stylesheet" href="./maincalendar.css" />
+    <script
+      src="https://kit.fontawesome.com/5a5a075177.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.js"
+      defer
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let calendarEl = document.getElementById("calendar");
+        let calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          contentHeight: 500, // calendar 높이 설정
+          expandRows: false,
+          navLinks: true, // 날짜를 선택하면 Day 캘린더나 Week 캘린더로 링크
+          editable: true, // 수정 여부
+          selectable: true, // 달력 일자 드래그 설정가능
+          nowIndicator: true, // 현재 시간 마크
+          dayMaxEvents: true, // 이벤트가 오버되면 높이 제한 (+ 몇 개식으로 표현)
+          locale: "ko", // 한국어 설정
+        });
+        calendar.render();
+        toggle();
+      });
+      function toggle() {
+        const toggleBtn = document.querySelector(".navbar-toggleBtn");
+        const menu = document.querySelector(".menuitems");
+        toggleBtn.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      }
+    </script>
+
+    <title>일정관리</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa fa-solid fa-leaf"></i>
+      </div>
+      <ul class="menuitems">
+        <li>
+          <a href="./calendar.html">일정관리</a>
+        </li>
+        <li>
+          <a href="./timeManagement.html">직원 근태관리</a>
+        </li>
+        <li>
+          <a href="./employee.html">직원 관리</a>
+        </li>
+      </ul>
+      <a href="#" class="navbar-toggleBtn">
+        <i class="fa fa-solid fa-bars"></i>
+      </a>
+    </nav>
+
+    <div id="calendar"></div>
+  </body>
+</html>

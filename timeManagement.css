@@ -1,0 +1,217 @@
+/*root*/
+:root {
+  /*color*/
+  --color--white-grey: #f4efe9;
+  --color--black: #222222;
+  --color--dark-dreen: #49583c;
+  --color--yellow: #f4c430;
+  --color--orange: #d5702b;
+
+  /*size*/
+  --size--border-radius: 6px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: var(--color--white-grey);
+  color: var(--color--black);
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: var(--color--black);
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/*Navbar*/
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+  height: auto;
+}
+.logo {
+  margin-left: 1em;
+  padding-top: 0.5em;
+  font-size: 20px;
+}
+.logo i {
+  color: var(--color--dark-dreen);
+}
+.menuitems {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color--dark-dreen);
+}
+.menuitems li {
+  padding: 0.3em;
+  width: 100%;
+  text-align: center;
+}
+
+.menuitems li:hover {
+  padding: 0.3em;
+  background-color: var(--color--orange);
+}
+.menuitems a {
+  color: white;
+}
+.navbar-toggleBtn {
+  position: absolute;
+  display: block;
+  top: 0.5em;
+  right: 1.5em;
+  font-size: 20px;
+  color: var(--color--orange);
+}
+
+.menuitems.active {
+  display: flex;
+}
+/*Control Bar*/
+.controlBar {
+  margin: 0 auto;
+  width: 20em;
+}
+.controlBar h2 {
+  padding: 0.5em 0 0 1em;
+  font-size: 1.1em;
+}
+/*
+controlBar > employeeList
+*/
+.employeeList {
+  margin-bottom: 0.5em;
+  background-color: white;
+  border-radius: var(--size--border-radius);
+}
+.employeeList span {
+  display: block;
+  padding: 0.5em;
+}
+.employeeList input {
+  margin: 0.5em 0.5em 1em 1em;
+  padding: 0.5em;
+}
+/*
+controlbar > details
+*/
+.details {
+  background-color: white;
+}
+.details span {
+  display: block;
+  padding: 0.5em;
+}
+.inputDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 5em;
+}
+.inputDetails label {
+  margin: 0.5em 0;
+}
+.inputTime label {
+  display: block;
+}
+.inputTime input {
+  margin-right: 1em;
+  width: 3em;
+}
+.inputDayOff {
+  margin: 0.5em 0;
+}
+.confirmSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin: 0.5em 0;
+  padding: 1em;
+  background-color: white;
+  border-radius: var(--size--border-radius);
+}
+.confirmSection span {
+  margin-bottom: 0.5em;
+}
+
+#save {
+  display: block;
+  margin: 1em auto;
+  width: 5em;
+  height: 2em;
+  background-color: var(--color--dark-dreen);
+  color: var(--color--white-grey);
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 500px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    background-color: var(--color--dark-dreen);
+  }
+  .navbar-toggleBtn {
+    display: none;
+  }
+  .menuitems {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menuitems a {
+    color: var(--color--white-grey);
+  }
+
+  /*Control Bar*/
+
+  .controlBar {
+    display: inline-block;
+    width: auto;
+  }
+  .controlBar h2 {
+    margin: 0 0 0.5em 0;
+    padding: 0.5em;
+    border-radius: var(--size--border-radius);
+    background-color: white;
+  }
+  .employeeList {
+    padding: 0.1em;
+    border-radius: var(--size--border-radius);
+    background-color: white;
+  }
+  .employeeList input {
+    display: inline-block;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+    border-radius: var(--size--border-radius);
+    background-color: white;
+  }
+  .details span {
+    margin: 1em 0;
+    padding: 0 1em;
+  }
+  .inputDetails {
+    display: inline-block;
+    padding-bottom: 1em;
+  }
+  .inputDetails label {
+    margin-left: 2em;
+  }
+}
