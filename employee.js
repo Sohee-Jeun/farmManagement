@@ -155,6 +155,8 @@ function nameToString(name) {
 }
 
 function displaypaymentSheet(name, totalHours, month) {
+  const paymentSheet = document.getElementById("paymentSheet");
+  paymentSheet.innerHTML = ``;
   let [amountPaid, deduction, actualAmountPaid] = paymentCalc(totalHours);
   return `     
   <thead>
