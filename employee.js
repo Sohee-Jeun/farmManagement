@@ -76,8 +76,8 @@ function createHTMLString(item) {
     `;
 }
 function employeeListClick(event, employees) {
-  const table = document.getElementById("paymentSheet");
-  table.innerHTML = "";
+  const table = document.getElementById("punchInDetails");
+  table.innerHTML = ``;
   const dataset = event.target.dataset;
   const key = dataset.key;
   const value = dataset.value;
@@ -98,6 +98,7 @@ function setEventListeners(employees) {
 
 async function getpunchedInDatabase(name) {
   const table = document.getElementById("punchInDetails");
+  table.innerHTML = ``;
   const paymentBtn = document.querySelector(".paymentStatusBtn");
   const db = getFirestore();
   const q = query(collection(db, "users"), where("name", "==", name));
