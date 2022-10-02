@@ -98,7 +98,8 @@ function setEventListeners(employees) {
 
 async function getpunchedInDatabase(name) {
   const table = document.getElementById("punchInDetails");
-  table.innerHTML = ``;
+  table.innerHTML = `
+  <thead></thead>`;
   const paymentBtn = document.querySelector(".paymentStatusBtn");
   const db = getFirestore();
   const q = query(collection(db, "users"), where("name", "==", name));
