@@ -98,8 +98,9 @@ function setEventListeners(employees) {
 
 async function getpunchedInDatabase(name) {
   const table = document.getElementById("punchInDetails");
-  table.innerHTML = `
-  <thead></thead>`;
+  table.innerHTML = ``;
+  const paymentSheet = document.getElementById("paymentSheet");
+  paymentSheet.innerHTML = ``;
   const paymentBtn = document.querySelector(".paymentStatusBtn");
   const db = getFirestore();
   const q = query(collection(db, "users"), where("name", "==", name));
@@ -121,8 +122,6 @@ async function getpunchedInDatabase(name) {
 }
 
 async function getPaymentDetails(name, startDate, endDate) {
-  const paymentSheet = document.getElementById("paymentSheet");
-  paymentSheet.innerHTML = ``;
   const db = getFirestore();
   const q = query(
     collection(db, "users"),
