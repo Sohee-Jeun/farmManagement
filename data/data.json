@@ -5,7 +5,7 @@
             "name":"르 페어론",
             "birth":"1992년 08월 17일",
             "hiredDate":"2022년 9월 2일",
-            "payDate":2,
+            "payDate":3,
             "img":"./assets/imgs/img_920817.png"
         },
         {
@@ -13,7 +13,7 @@
             "name":"폰 패니",
             "birth":"1998년 2월 3일",
             "hiredDate":"2022년 2월 22일",
-            "payDate":22,
+            "payDate":24,
             "img":"./assets/imgs/img_980203.png"
         },
         {
@@ -21,7 +21,7 @@
             "name":"태이 터엉",
             "birth":"1999년 6월 13일",
             "hiredDate":"2022년 9월 30일",
-            "payDate":30,
+            "payDate":1,
             "img":"./assets/imgs/img_990613.png"
         }
     ]

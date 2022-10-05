@@ -53,7 +53,6 @@ function createHTMLString(item) {
     <tr> 
             <td rowspan="7" class="imgTable"><img src="${item.img}" class="item__thumbnail" ></td>
             <td >이름: ${item.name}</td>
-           
           </tr>
           <tr>
             <td >생년월일: ${item.birth}</td>
@@ -61,7 +60,6 @@ function createHTMLString(item) {
           <tr>
             <td>고용일: ${item.hiredDate}</td>
           </tr>
-         
           <tr>
             <td>월급날: 매월 ${item.payDate}일</td>
           </tr>
