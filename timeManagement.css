@@ -94,6 +94,7 @@ controlBar > employeeList
   margin-bottom: 0.5em;
   background-color: white;
   border-radius: var(--size--border-radius);
+  box-shadow: 0px 2px 4px 1px rgba(0, 2, 0, 0.25);
 }
 .employeeList span {
   display: block;
@@ -108,6 +109,7 @@ controlbar > details
 */
 .details {
   background-color: white;
+  box-shadow: 0px 2px 4px 1px rgba(0, 2, 0, 0.25);
 }
 .details span {
   display: block;
@@ -140,6 +142,7 @@ controlbar > details
   padding: 1em;
   background-color: white;
   border-radius: var(--size--border-radius);
+  box-shadow: 0px 2px 4px 1px rgba(0, 2, 0, 0.25);
 }
 .confirmSection span {
   margin-bottom: 0.5em;
@@ -162,6 +165,12 @@ controlbar > details
   color: var(--color--white-grey);
   font-weight: 500;
   border-radius: 4px;
+  box-shadow: 0px 2px 4px 1px rgba(0, 2, 0, 0.25);
+}
+#save:hover {
+  cursor: pointer;
+  background-color: var(--color--yellow);
+  color: var(--color--black);
 }
 
 @media screen and (min-width: 500px) {
@@ -193,8 +202,6 @@ controlbar > details
   .controlBar h2 {
     margin: 0 0 0.5em 0;
     padding: 0.5em;
-    border-radius: var(--size--border-radius);
-    background-color: white;
   }
   .employeeList {
     padding: 0.1em;

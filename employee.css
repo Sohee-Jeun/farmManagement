@@ -82,6 +82,7 @@ ul {
 .employeeListSection {
   background-color: white;
   border-radius: var(--size--border-radius);
+  box-shadow: 0px 2px 4px 1px rgba(0, 2, 0, 0.25);
 }
 .employeeListSection h2 {
   padding: 0.5em 0 0 1em;
@@ -93,15 +94,17 @@ ul {
   padding: 1em;
 }
 .employeeBtn {
-  margin-right: 4px;
+  margin-right: 6px;
   padding: 3px;
   width: 5em;
   color: var(--color--white-grey);
   background-color: var(--color--dark-dreen);
   border-radius: var(--size--border-radius);
+  box-shadow: 0px 2px 2px 0px rgba(0, 2, 0, 0.5);
 }
 
-.employeeBtn:hover {
+.employeeBtn:hover,
+.paymentStatusBtn:hover {
   cursor: pointer;
   background-color: var(--color--yellow);
   color: var(--color--black);
@@ -117,7 +120,9 @@ ul {
   padding: 0.5em;
   background-color: white;
   border-radius: var(--size--border-radius);
+  box-shadow: 0px 2px 4px 0px rgba(0, 2, 0, 0.5);
 }
+
 #personalInfo {
   table-layout: auto;
   border-collapse: collapse;
@@ -139,6 +144,7 @@ ul {
   height: 10em;
   background-color: white;
   border-radius: var(--size--border-radius);
+  box-shadow: 0px 2px 4px 0px rgba(0, 2, 0, 0.5);
   overflow-y: scroll;
 }
 #wt {
@@ -164,6 +170,7 @@ ul {
   left: 0;
   background-color: white;
   border-radius: var(--size--border-radius);
+  box-shadow: 0px 2px 4px 0px rgba(0, 2, 0, 0.5);
 }
 .selectPeroid div {
   text-align: center;
@@ -177,6 +184,7 @@ ul {
   border-radius: var(--size--border-radius);
   background-color: var(--color--dark-dreen);
   color: white;
+  box-shadow: 0px 2px 2px 0px rgba(0, 2, 0, 0.5);
 }
 #paymentSheet {
   margin-bottom: 1em;
