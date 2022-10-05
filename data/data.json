@@ -1,24 +1,26 @@
 {
     "employees":[
         {
-            "employeeNum":"961201",
-            "name":"전소희",
-            "birth":"1996년 12월 1일",
-            "forignNum":123456,
-            "contractPeriod":3,
-            "hiredDate":"2022년 2월 22일",
-            "endContract":"2025년 2월 22일",
-            "payDate":25,
+            "employeeNum":"920817",
+            "name":"르 페어론",
+            "birth":"1992년 08월 17일",
+            "hiredDate":"2022년 9월 2일",
+            "payDate":2,
             "img":"./assets/imgs/19.jpg"
         },
         {
-            "employeeNum":"980807",
-            "name":"전태원",
-            "birth":"1998년 8월 7일",
-            "forignNum":56789,
-            "contractPeriod":5,
-            "hiredDate":"2019년 1월 5일",
-            "endContract":"2023년 1월 5일",
+            "employeeNum":"980203",
+            "name":"폰 패니",
+            "birth":"1998년 2월 3일",
+            "hiredDate":"2022년 2월 22일",
+            "payDate":23,
+            "img":"./assets/imgs/12.jpg"
+        },
+        {
+            "employeeNum":"990613",
+            "name":"태이 터엉",
+            "birth":"1999년 6월 13일",
+            "hiredDate":"2022년 9월 30일",
             "payDate":23,
             "img":"./assets/imgs/12.jpg"
         }

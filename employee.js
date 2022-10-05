@@ -59,25 +59,15 @@ function createHTMLString(item) {
             <td >생년월일: ${item.birth}</td>
           </tr>
           <tr>
-            <td>외국인 등록번호: ${item.forignNum}</td>
-          </tr>
-          <tr>
             <td>고용일: ${item.hiredDate}</td>
           </tr>
-          <tr>
-            <td>계약기간: ${item.contractPeriod}년</td>
-          </tr>
-          <tr>
-            <td>계약 종료일: ${item.endContract}</td>
-          </tr>
+         
           <tr>
             <td>월급날: 매월 ${item.payDate}일</td>
           </tr>
     `;
 }
 function employeeListClick(event, employees) {
-  // const table = document.getElementById("paymentSheet");
-  // table.innerHTML = ``;
   const dataset = event.target.dataset;
   const key = dataset.key;
   const value = dataset.value;
