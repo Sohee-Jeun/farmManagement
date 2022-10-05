@@ -84,10 +84,12 @@ async function showConfirmMessage(db, employeeName) {
 
   querySnapshot.forEach((doc) => {
     let nameString;
-    if (doc.data().name === "961201") {
-      nameString = "전소희";
-    } else if (doc.data().name === "980807") {
-      nameString = "전태원";
+    if (doc.data().name === "920817") {
+      nameString = "르 페어론";
+    } else if (doc.data().name === "980203") {
+      nameString = "폰 패니";
+    } else if (doc.data().name === "990613") {
+      nameString = "태이 터엉";
     }
     confirmSection.innerHTML = `
         <span class="confirm employeeName">이름: ${nameString}</span>
@@ -96,6 +98,8 @@ async function showConfirmMessage(db, employeeName) {
       doc.data().mins
     }분</span>
         <span class="confirm dayOffReason">휴무사유: ${doc.data().dayOff}</span>
+        <div class="confirmSign"> <i class="fa fa-solid fa-check"></i></div>
+        <p class="confirmMsg">데이터가 저장되었습니다.</p>
       `;
   });
 }

@@ -136,10 +136,12 @@ async function getPaymentDetails(name, startDate, endDate) {
 
 function nameToString(name) {
   let employeeName;
-  if (name === "961201") {
-    employeeName = "전소희";
-  } else if (name == "980807") {
-    employeeName = "전태원";
+  if (name === "920817") {
+    employeeName = "르 페어론";
+  } else if (name == "980203") {
+    employeeName = "폰 패니";
+  } else if (name == "990613") {
+    employeeName = "태이 터엉";
   }
   return employeeName;
 }

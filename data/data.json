@@ -6,23 +6,23 @@
             "birth":"1992년 08월 17일",
             "hiredDate":"2022년 9월 2일",
             "payDate":2,
-            "img":"./assets/imgs/19.jpg"
+            "img":"./assets/imgs/img_920817.png"
         },
         {
             "employeeNum":"980203",
             "name":"폰 패니",
             "birth":"1998년 2월 3일",
             "hiredDate":"2022년 2월 22일",
-            "payDate":23,
-            "img":"./assets/imgs/12.jpg"
+            "payDate":22,
+            "img":"./assets/imgs/img_980203.png"
         },
         {
             "employeeNum":"990613",
             "name":"태이 터엉",
             "birth":"1999년 6월 13일",
             "hiredDate":"2022년 9월 30일",
-            "payDate":23,
-            "img":"./assets/imgs/12.jpg"
+            "payDate":30,
+            "img":"./assets/imgs/img_990613.png"
         }
     ]
 }
