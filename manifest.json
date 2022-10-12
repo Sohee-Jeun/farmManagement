@@ -7,7 +7,7 @@
   "scope": "/",
   "short_name": "벌대농장",
   "description":"Developed by Sohee",
-  "start_url": "https://sohee-jeun.github.io/farm-management/",
+  "start_url": "/index.html",
   "theme_color": "#49583c",
   "icons": [
     {
